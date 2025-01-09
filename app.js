@@ -126,3 +126,5 @@ for (let i = 2; i < blogPosts.length; i++) {
   </div>`;
   blogPostsContainer3.innerHTML += bootstrapCard;
 }
+
+
