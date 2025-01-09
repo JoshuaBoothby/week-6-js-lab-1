@@ -16,33 +16,46 @@
   </head>
   <body class="container">
     <header>
-        <h1>JS Week 6 Lab 1</h1>
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">JS Week 6 Lab 1</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          </div>
+        </div>
+      </nav>
+      <h1>JS Week 6 Lab 1</h1>
     </header>
     <main>
-        <section>
+      <section>
+        <h2 class="h5">All numbers</h2>
+        <ul id="allNumbers" class="list-group"></ul>
 
-            <h2 class="h5">All numbers</h2>
-            <ul id="allNumbers" class="list-group"></ul>
-            
-            <h2 class="h5">Even numbers</h2>
-            <ul id="evenNumbers" class="list-group"></ul>
-            
-            <h2 class="h5">Odd numbers</h2>
-            <ul id="oddNumbers" class="list-group"></ul>
-        </section>
-        <section>
-            
-        </section>
-  
+        <h2 class="h5">Even numbers</h2>
+        <ul id="evenNumbers" class="list-group"></ul>
 
+        <h2 class="h5">Odd numbers</h2>
+        <ul id="oddNumbers" class="list-group"></ul>
+      </section>
+      <section class="mt-5">
+        <h2 class="h5">Blog Posts</h2>
+        <div id="blogPostsContainer"></div>
+      </section>
     </main>
     <footer class="text-center">
-        <p>
-            Copyright <span class='h5' id-"year">2025</span> Joshua Boothby
-        </p>
+      <p>Copyright <span class='h5' id-"year">2025 Joshua Boothby</p>
     </footer>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
