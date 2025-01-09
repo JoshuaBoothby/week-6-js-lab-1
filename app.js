@@ -60,6 +60,7 @@ for (let i = 0; i < blogPosts.length; i++) {
   blogPostsContainer1.innerHTML += bootstrapCard;
 }
 
+let blogPostsContainer2 = document.getElementById("blogPostsContainer2");
 
 for (let i = 0; i < 1; i++) {
   let bootstrapCard = `<div class="card" style="width: 18rem;">
@@ -71,4 +72,57 @@ for (let i = 0; i < 1; i++) {
   </div>
 </div>`;
   blogPostsContainer2.innerHTML += bootstrapCard;
+}
+
+// Adding five more posts
+blogPosts.push(
+  {
+    id: 3,
+    title: "Blog Post 3",
+    author: "Author C",
+    date: "2023-12-05",
+    src: "https://via.placeholder.com/100x100",
+  },
+  {
+    id: 4,
+    title: "Blog Post 4",
+    author: "Author D",
+    date: "2023-12-10",
+    src: "https://via.placeholder.com/100x100",
+  },
+  {
+    id: 5,
+    title: "Blog Post 5",
+    author: "Author E",
+    date: "2023-12-15",
+    src: "https://via.placeholder.com/100x100",
+  },
+  {
+    id: 6,
+    title: "Blog Post 6",
+    author: "Author F",
+    date: "2023-12-20",
+    src: "https://via.placeholder.com/100x100",
+  },
+  {
+    id: 7,
+    title: "Blog Post 7",
+    author: "Author G",
+    date: "2023-12-25",
+    src: "https://via.placeholder.com/100x100",
+  }
+);
+
+let blogPostsContainer3 = document.getElementById("blogPostsContainer3");
+
+for (let i = 2; i < blogPosts.length; i++) {
+  let bootstrapCard = `<div class="card" style="width: 18rem;">
+    <img src="${blogPosts[i].src}" class="card-img-top" alt="${blogPosts[i].title}">
+    <div class="card-body">
+      <h5 class="card-title">${blogPosts[i].title}</h5>
+      <p class="card-text">${blogPosts[i].author}</p>
+      <p class="card-text">${blogPosts[i].date}</p>
+    </div>
+  </div>`;
+  blogPostsContainer3.innerHTML += bootstrapCard;
 }
