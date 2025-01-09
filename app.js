@@ -34,18 +34,18 @@ let blogPosts = [
     title: "Blog Post 1",
     author: "Author A",
     date: "2023-11-15",
-    src: "https://via.placehold.com/100x100",
+    src: "https://placehold.co/100x100",
   },
   {
     id: 2,
     title: "Blog Post 2",
     author: "Author B",
     date: "2023-12-01",
-    src: "https://via.placehold.com/100x100",
+    src: "https://placehold.co/100x100",
   },
 ];
 
-let blogPostsContainer = document.getElementById("blogPostsContainer");
+let blogPostsContainer1 = document.getElementById("blogPostsContainer1");
 
 // Both blog posts as a Bootstrap card
 for (let i = 0; i < blogPosts.length; i++) {
@@ -57,5 +57,18 @@ for (let i = 0; i < blogPosts.length; i++) {
     <p class="card-text">${blogPosts[i].date}</p>
   </div>
 </div>`;
-  blogPostsContainer.innerHTML += bootstrapCard;
+  blogPostsContainer1.innerHTML += bootstrapCard;
+}
+
+
+for (let i = 0; i < 1; i++) {
+  let bootstrapCard = `<div class="card" style="width: 18rem;">
+  <img src="${blogPosts[i].src}" class="card-img-top" alt="${blogPosts[i].title}">
+  <div class="card-body">
+    <h5 class="card-title">${blogPosts[i].title}</h5>
+    <p class="card-text">${blogPosts[i].author}</p>
+    <p class="card-text">${blogPosts[i].date}</p>
+  </div>
+</div>`;
+  blogPostsContainer2.innerHTML += bootstrapCard;
 }
