@@ -52,7 +52,7 @@ for (let i = 0; i < blogPosts.length; i++) {
   let bootstrapCard = `<div class="card" style="width: 18rem;">
   <img src="${blogPosts[i].src}" class="card-img-top" alt="${blogPosts[i].title}">
   <div class="card-body">
-    <h5 class="card-title">${blogPosts[i].title}</h5>
+    <h2 class="card-title">${blogPosts[i].title}</h2>
     <p class="card-text">${blogPosts[i].author}</p>
     <p class="card-text">${blogPosts[i].date}</p>
   </div>
@@ -66,7 +66,7 @@ for (let i = 0; i < 1; i++) {
   let bootstrapCard = `<div class="card" style="width: 18rem;">
   <img src="${blogPosts[i].src}" class="card-img-top" alt="${blogPosts[i].title}">
   <div class="card-body">
-    <h5 class="card-title">${blogPosts[i].title}</h5>
+    <h2 class="card-title">${blogPosts[i].title}</h2>
     <p class="card-text">${blogPosts[i].author}</p>
     <p class="card-text">${blogPosts[i].date}</p>
   </div>
@@ -119,7 +119,7 @@ for (let i = 2; i < blogPosts.length; i++) {
   let bootstrapCard = `<div class="card" style="width: 18rem;">
     <img src="${blogPosts[i].src}" class="card-img-top" alt="${blogPosts[i].title}">
     <div class="card-body">
-      <h5 class="card-title">${blogPosts[i].title}</h5>
+      <h2 class="card-title">${blogPosts[i].title}</h2>
       <p class="card-text">${blogPosts[i].author}</p>
       <p class="card-text">${blogPosts[i].date}</p>
     </div>
